@@ -52,3 +52,16 @@ a{
     text-decoration: underline;
     color: yellow;
 }
+div.repo{
+    position: fixed;
+    top: 60px;
+    background:#fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    > a{
+        text-decoration: none;
+        font-weight:700;
+        color: black;
+    }
+}

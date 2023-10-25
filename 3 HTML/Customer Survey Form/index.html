@@ -14,19 +14,19 @@
             <!-- First Name -->
             <div>
                 <Label for="firstName">First Name: 
-                    <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+                    <input type="text" name="firstName" class="firstName" id="firstName" placeholder="First Name" required/>
                 </Label>
             </div>
             <!-- Last Name -->
             <div>
                 <Label for="lastName">Last Name: 
-                    <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+                    <input type="text" name="lastName" id="lastName" placeholder="Last Name" required/>
                 </Label>
             </div>
             <!-- Date of Birth -->
             <div>
                 <Label for="dob">Date of Birth: 
-                    <input type="date" id="dob" min="1980-01-01" max="2018-01-01" required>
+                    <input type="date" id="dob" min="1980-01-01" max="2018-01-01" required/>
                 </Label>
             </div>
             <!-- Country -->
@@ -67,17 +67,23 @@
             <div>
                 <Label for="country_code">Mobile Number: 
                     <span id="country_code" readonly> &nbsp;</span> 
-                    <input type="tel" id="mobile" name="mobile" placeholder="Enter your Mobile Number" required>
+                    <input type="tel" id="mobile" name="mobile" placeholder="Enter your Mobile Number" required/>
                 </Label>
             </div>
             <!-- Buttons -->
             <div class="buttons-div">
-                <input type="submit" class="button">
-                <input type="reset" class="button">
+                <button type="submit" class="button">Submit</button>
+                <input type="reset" class="button"/>
             </div>
         </form>
     </div>
 
+    <div class="home">
+        <a href="/index.html">Home</a>
+    </div>
+    <div class="repo">
+        <a href="https://github.com/VamshiRk27/CloudVandana_Assignment_AssociateSoftwareEngineer2023/tree/master/3%20HTML/Customer%20Survey%20Form">Repo Link</a>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>
