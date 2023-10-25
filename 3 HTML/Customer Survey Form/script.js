@@ -9,4 +9,5 @@ let form=document.getElementById("survey").addEventListener("submit",(e)=>{
                 Email: ${ document.getElementById("email").value}
                 Mobile: ${ document.getElementById("mobile").value}`;
     alert("Customer Details: "+details);
+    location.reload();
 })

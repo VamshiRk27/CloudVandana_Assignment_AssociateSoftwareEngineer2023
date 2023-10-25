@@ -1,13 +1,13 @@
 // Question: Perform sorting of an array in descending order.
 
 // Components
-const inputButton=document.getElementById("sort"); // Button for Input
+const inputButton=document.getElementById("sort"); // Button for Sorting
 const resetButton=document.getElementById("reset"); // Button for Reset
 const inputString=document.getElementById("array"); // String for User Input initially empty
 const question=document.querySelector("p.question"); // Input Array display
 const answer=document.querySelector("p.ans"); // Reversed Array display
-const array=[]; // array to store numbers
-let count=0;
+const array=[]; // array to store input array numbers
+let count=0; // Variable to track the sort status, 0 => initial unsorted array
 
 // Event Listeners
 resetButton.addEventListener("click",()=>{
@@ -30,6 +30,7 @@ inputButton.addEventListener("click",()=>{
             start=end; // start will changed to new end to track new word
         }
     }
+    // At last the remaining word will be converted as number and pushed into array.
     array.push(string.substring(start));
     renderArray(question,array); // Display Question Array
     sort(); // Function to perform sorting
@@ -41,15 +42,20 @@ inputButton.addEventListener("click",()=>{
 function renderArray(element,array){
     // Function to render the array on window
     element.innerHTML=`[`;
+    // render each array element followed by , ex- 3 , 4 , .... 
     array.forEach((item) => {
         element.innerHTML+=`${item}`+" , "
     });
+    // helper to store the rendered data
     const temp=element.innerHTML
+    // final rendering to remove last extra comma(,) or whitespace
     element.innerHTML=temp.substring(0,temp.length-3);
     element.innerHTML+=`]`;
 }
 
 function sort(){
+    // Perform sorting using Bubble Sort Algorithm
+    // The Heavier weights/number will come before the lesser weight/number. 
     for (let i = 0; i < array.length; i++) { 
         // Last i elements are already in place   
         for (let j = 0; j < (array.length - i - 1); j++) { 
