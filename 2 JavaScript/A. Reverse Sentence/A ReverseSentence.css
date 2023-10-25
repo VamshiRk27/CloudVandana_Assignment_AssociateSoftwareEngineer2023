@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Mooli:regular);
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding:50px 30px;
+    font-family: 'Mooli',sans-serif;
+}
+div{
+    margin: 20px auto;
+}
+div.question{
+    width: 100%;
+}
+h2{
+    display: inline;
+}
+p{
+    display: inline;
+    font-size: 22px;
+    margin-left: 20px;
+}
+p.task{
+    display: block;
+    margin: 0;
+    margin-bottom: 100px;
+    > span{
+        font-weight: bold;
+    }
+}
+button{
+    background: rgb(57, 57, 255);
+    border: none;
+    border-radius: 5px;
+    padding: 15px 10px;
+    color: white;
+    cursor: pointer;
+}
+button#reset{
+    padding: 10px 15px;
+    margin-left: 15px;
+}

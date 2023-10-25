@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Survey Form</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic" rel="stylesheet"/>
+</head>
+<body>
+    <div class="form-container">
+        <form action="./script.js" method="post" id="survey">
+            <h1>Customer Survey Form</h1>
+            <!-- First Name -->
+            <div>
+                <Label for="firstName">First Name: 
+                    <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+                </Label>
+            </div>
+            <!-- Last Name -->
+            <div>
+                <Label for="lastName">Last Name: 
+                    <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+                </Label>
+            </div>
+            <!-- Date of Birth -->
+            <div>
+                <Label for="dob">Date of Birth: 
+                    <input type="date" id="dob" min="1980-01-01" max="2018-01-01" required>
+                </Label>
+            </div>
+            <!-- Country -->
+            <div>
+                <Label for="country">Country: 
+                    <select name="country" id="country" autocomplete="on">
+                        <option value="" selected disabled>Choose Country</option>
+                        <option value="INDIA">INDIA</option>
+                        <option value="USA">USA</option>
+                        <option value="AUSTRALIA">AUSTRALIA</option>
+                        <option value="SRI LANKA">SRI LANKA</option>
+                        <option value="BANGLADESH">BANGLADESH</option>
+                    </select>
+                </Label>
+            </div>
+            <!-- Gender -->
+            <div>
+                <Label for="gender">Gender: 
+                    <input type="radio" id="male" name="gender" value="male" checked>
+                    <Label for="male">Male</Label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <Label for="female">Female</Label>
+                </Label>
+            </div>
+            <!-- Profession -->
+            <div>
+                <Label for="profession">Profession: 
+                    <input type="text" id="profession" name="profession" placeholder="Enter your Profession" required>
+                </Label>
+            </div>
+            <!-- Email -->
+            <div>
+                <Label for="email">Email: 
+                    <input type="email" id="email" name="email" placeholder="Enter your Email" autocomplete="off" required>
+                </Label>
+            </div>
+            <!-- Enter our Mobile Number -->
+            <div>
+                <Label for="country_code">Mobile Number: 
+                    <span id="country_code" readonly> &nbsp;</span> 
+                    <input type="tel" id="mobile" name="mobile" placeholder="Enter your Mobile Number" required>
+                </Label>
+            </div>
+            <!-- Buttons -->
+            <div class="buttons-div">
+                <input type="submit" class="button">
+                <input type="reset" class="button">
+            </div>
+        </form>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

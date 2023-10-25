@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg,rgb(65, 77, 204),rgb(29, 46, 225));
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-family: 'Open Sans',sans-serif;
+}
+.form-container{
+    background: #fff;
+    border: none;
+    border-radius: 4px;
+    height: 95%;
+    width: 40vw;
+    padding: 10px 30px;
+    > form{
+        >h1 {
+            text-align: center;
+            margin: 5px auto 25px;
+        }
+        > div{
+            margin: 5px 0 0;
+            padding: 5px;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+        }
+        & input,& select{
+            padding: 3px;
+        }
+        & input#country_code{
+            width: 20px;
+        }
+        > div:last-child{
+            margin-top: 10px;
+        }
+    } 
+}
+.buttons-div{
+    width: 100%;
+    > .button{
+        padding: 10px 30px;
+        margin-right: 10px;
+        border-radius:6px;
+        border: none;
+        background: linear-gradient(135deg,rgb(65, 77, 204),rgb(29, 46, 225));
+        color: white;
+        font-size: 17px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
